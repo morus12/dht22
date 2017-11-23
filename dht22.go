@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/kidoman/embd"
-	_ "github.com/kidoman/embd/host/rpi"
+	_ "github.com/kidoman/embd/host/rpi" // This loads the RPi
 )
 
 // AM2302/DHT22 - digital relative humidity and temperature sensor
