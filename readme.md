@@ -1,11 +1,13 @@
 ## Readme
 
-It's AM2302/DHT22 library. No external c libraries. 
+A library for getting data from a [AM2302/DHT22](https://cdn-shop.adafruit.com/datasheets/Digital+humidity+and+temperature+sensor+AM2302.pdf) connected to a Raspberry Pi. Uses [embd](github.com/kidoman/embd). No external C libraries. 
 
-## Installation 
+## Installation : 
+
 `go get github.com/pravipati/dht22`
 
-## Usage
+## Usage:
+
 ```
 package main 
 
@@ -32,7 +34,20 @@ func main () {
 }
 ```
 
-## Testing environmnet 
+## Testing Environment ✅:
 - Raspberry Pi 2 Model B
 - DHT22 sensor
 - go version go1.9.2 linux/arm
+
+# Measurement Details 📝:
+
+**Humidity**:
+  - Measured as [Relative Humidity](https://en.wikipedia.org/wiki/Relative_humidity)
+  - Accurate within +-2%RH
+
+**Temperature**:
+  - Measured in Celsius
+  - Accurate within +-0.5C
+
+**Additional**:
+  - One 100nF capacitor can be added between VDD and GND for wave filtering
